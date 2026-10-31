@@ -1,0 +1,23 @@
+{
+  "source": {
+    "repository": "https://github.com/jonahsnider/wpilog-parser",
+    "revision": "24a628dfa79175300bacd5267048e98c2b76be92",
+    "path": "packages/wpilog-parser/tests/fixtures/logs/WPILIB_TBD_aba74b981a582b4b.wpilog",
+    "sha256": "58b384db73bd74fbb7a5507d471d539bccaf9ee51d4a4f9a49794b7a410862f1"
+  },
+  "schemaRecords": 4,
+  "schemas": [
+    {
+      "name": "ControlWord",
+      "schema": "uint64 opModeHash:56;enum{unknown=0,autonomous=1,teleoperated=2,utility=3} uint64 robotMode:2;bool enabled:1;bool eStop:1;bool fmsAttached:1;bool dsAttached:1;"
+    },
+    {
+      "name": "SwerveModuleVelocity",
+      "schema": "double velocity;Rotation2d angle"
+    },
+    {
+      "name": "Rotation2d",
+      "schema": "double value"
+    }
+  ]
+}
